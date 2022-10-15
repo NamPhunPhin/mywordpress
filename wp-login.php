@@ -5,6 +5,11 @@
 	<title>Đăng nhập &lsaquo; Nam Phun Phin &#8212; WordPress</title>
 	<meta name="robots" content="max-image-preview:large, noindex, noarchive">
 <link rel="dns-prefetch" href="//s.w.org">
+<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-content/plugins/ibtana-ecommerce-product-addons/dist/js/slick.min.js?ver=0.4.2.2" id="iepa-slick-js-js"></script>
+<link rel="stylesheet" id="iepa-fancybox-css-css" href="https://namphunphin.github.io/mywordpress/wp-content/plugins/ibtana-ecommerce-product-addons/dist/css/fancybox.css?ver=0.4.2.2" type="text/css" media="all">
+<link rel="stylesheet" id="iepa-front-css-css" href="https://namphunphin.github.io/mywordpress/wp-content/plugins/ibtana-ecommerce-product-addons/dist/css/gallery-slider.css?ver=0.4.2.2" type="text/css" media="all">
 <link rel="stylesheet" id="dashicons-css" href="https://namphunphin.github.io/mywordpress/wp-includes/css/dashicons.min.css?ver=6.0.2" type="text/css" media="all">
 <link rel="stylesheet" id="buttons-css" href="https://namphunphin.github.io/mywordpress/wp-includes/css/buttons.min.css?ver=6.0.2" type="text/css" media="all">
 <link rel="stylesheet" id="forms-css" href="https://namphunphin.github.io/mywordpress/wp-admin/css/forms.min.css?ver=6.0.2" type="text/css" media="all">
@@ -70,8 +75,9 @@ if ( typeof wpOnload === 'function' ) { wpOnload() }		</script>
 
 					</form>
 				</div>
-				<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
-<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+				<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-content/plugins/ibtana-ecommerce-product-addons/dist/js/jquery.fancybox.js?ver=0.4.2.2" id="iepa-fancybox-js-js"></script>
+<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-content/plugins/ibtana-ecommerce-product-addons/dist/js/jquery.zoom.min.js?ver=0.4.2.2" id="iepa-zoom-js-js"></script>
+<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-content/plugins/ibtana-ecommerce-product-addons/dist/js/gallery-slider.js?ver=0.4.2.2" id="iepa-front-js-js"></script>
 <script type="text/javascript" id="zxcvbn-async-js-extra">
 /* <![CDATA[ */
 var _zxcvbnSettings = {"src":"http:\/\/localhost\/myproject\/wordpress\/wp-includes\/js\/zxcvbn.min.js"};
