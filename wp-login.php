@@ -10,11 +10,11 @@
 <script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-content/plugins/ibtana-ecommerce-product-addons/dist/js/slick.min.js?ver=0.4.2.2" id="iepa-slick-js-js"></script>
 <link rel="stylesheet" id="iepa-fancybox-css-css" href="https://namphunphin.github.io/mywordpress/wp-content/plugins/ibtana-ecommerce-product-addons/dist/css/fancybox.css?ver=0.4.2.2" type="text/css" media="all">
 <link rel="stylesheet" id="iepa-front-css-css" href="https://namphunphin.github.io/mywordpress/wp-content/plugins/ibtana-ecommerce-product-addons/dist/css/gallery-slider.css?ver=0.4.2.2" type="text/css" media="all">
-<link rel="stylesheet" id="dashicons-css" href="https://namphunphin.github.io/mywordpress/wp-includes/css/dashicons.min.css?ver=6.0.2" type="text/css" media="all">
-<link rel="stylesheet" id="buttons-css" href="https://namphunphin.github.io/mywordpress/wp-includes/css/buttons.min.css?ver=6.0.2" type="text/css" media="all">
-<link rel="stylesheet" id="forms-css" href="https://namphunphin.github.io/mywordpress/wp-admin/css/forms.min.css?ver=6.0.2" type="text/css" media="all">
-<link rel="stylesheet" id="l10n-css" href="https://namphunphin.github.io/mywordpress/wp-admin/css/l10n.min.css?ver=6.0.2" type="text/css" media="all">
-<link rel="stylesheet" id="login-css" href="https://namphunphin.github.io/mywordpress/wp-admin/css/login.min.css?ver=6.0.2" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="https://namphunphin.github.io/mywordpress/wp-includes/css/dashicons.min.css?ver=6.0.3" type="text/css" media="all">
+<link rel="stylesheet" id="buttons-css" href="https://namphunphin.github.io/mywordpress/wp-includes/css/buttons.min.css?ver=6.0.3" type="text/css" media="all">
+<link rel="stylesheet" id="forms-css" href="https://namphunphin.github.io/mywordpress/wp-admin/css/forms.min.css?ver=6.0.3" type="text/css" media="all">
+<link rel="stylesheet" id="l10n-css" href="https://namphunphin.github.io/mywordpress/wp-admin/css/l10n.min.css?ver=6.0.3" type="text/css" media="all">
+<link rel="stylesheet" id="login-css" href="https://namphunphin.github.io/mywordpress/wp-admin/css/login.min.css?ver=6.0.3" type="text/css" media="all">
 	<meta name="referrer" content="strict-origin-when-cross-origin">
 		<meta name="viewport" content="width=device-width">
 		</head>
@@ -103,7 +103,7 @@ var pwsL10n = {"unknown":"Mật khẩu mạnh không xác định","short":"Rấ
 	wp.i18n.setLocaleData( localeData, domain );
 } )( "default", {"translation-revision-date":"2022-08-03 11:30:24+0000","generator":"GlotPress\/4.0.0-alpha.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"vi_VN"},"%1$s is deprecated since version %2$s! Use %3$s instead. Please consider writing more inclusive code.":["%1$s đã ngừng hoạt động từ phiên bản %2$s! Sử dụng thay thế bằng %3$s."]}},"comment":{"reference":"wp-admin\/js\/password-strength-meter.js"}} );
 </script>
-<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-admin/js/password-strength-meter.min.js?ver=6.0.2" id="password-strength-meter-js"></script>
+<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-admin/js/password-strength-meter.min.js?ver=6.0.3" id="password-strength-meter-js"></script>
 <script src="https://namphunphin.github.io/mywordpress/wp-content/plugins/the-events-calendar/common/src/resources/js/underscore-before.js"></script>
 <script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/underscore.min.js?ver=1.13.3" id="underscore-js"></script>
 <script src="https://namphunphin.github.io/mywordpress/wp-content/plugins/the-events-calendar/common/src/resources/js/underscore-after.js"></script>
@@ -112,10 +112,10 @@ var pwsL10n = {"unknown":"Mật khẩu mạnh không xác định","short":"Rấ
 var _wpUtilSettings = {"ajax":{"url":"\/myproject\/wordpress\/wp-admin\/admin-ajax.php"}};
 /* ]]> */
 </script>
-<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/wp-util.min.js?ver=6.0.2" id="wp-util-js"></script>
+<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/wp-util.min.js?ver=6.0.3" id="wp-util-js"></script>
 <script type="text/javascript" id="user-profile-js-extra">
 /* <![CDATA[ */
-var userProfileL10n = {"user_id":"0","nonce":"27483666da"};
+var userProfileL10n = {"user_id":"0","nonce":"3c302004be"};
 /* ]]> */
 </script>
 <script type="text/javascript" id="user-profile-js-translations">
@@ -125,7 +125,7 @@ var userProfileL10n = {"user_id":"0","nonce":"27483666da"};
 	wp.i18n.setLocaleData( localeData, domain );
 } )( "default", {"translation-revision-date":"2022-08-03 11:30:24+0000","generator":"GlotPress\/4.0.0-alpha.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"vi_VN"},"Your new password has not been saved.":["Mật khẩu mới của bạn chưa được lưu."],"Hide":["Ẩn đi"],"Show":["Hiển thị"],"Confirm use of weak password":["Chấp nhận sử dụng mật khẩu yếu."],"Hide password":["Ẩn mật khẩu"],"Show password":["Hiện mật khẩu"]}},"comment":{"reference":"wp-admin\/js\/user-profile.js"}} );
 </script>
-<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-admin/js/user-profile.min.js?ver=6.0.2" id="user-profile-js"></script>
+<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-admin/js/user-profile.min.js?ver=6.0.3" id="user-profile-js"></script>
 	<div class="clear"></div>
 	</body>
 	</html>

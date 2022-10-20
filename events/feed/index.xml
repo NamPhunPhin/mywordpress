@@ -12,12 +12,12 @@
 	<atom:link href="https://namphunphin.github.io/mywordpress/events/feed/" rel="self" type="application/rss+xml" />
 	<link>https://namphunphin.github.io/mywordpress</link>
 	<description>Một trang web mới sử dụng WordPress</description>
-	<lastBuildDate>Sat, 15 Oct 2022 06:56:15 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 20 Oct 2022 02:29:48 +0000</lastBuildDate>
 	<language>vi</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.0.2</generator>
+	<generator>https://wordpress.org/?v=6.0.3</generator>
 </channel>
 </rss>
