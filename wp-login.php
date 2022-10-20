@@ -115,7 +115,7 @@ var _wpUtilSettings = {"ajax":{"url":"\/myproject\/wordpress\/wp-admin\/admin-aj
 <script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/wp-util.min.js?ver=6.0.3" id="wp-util-js"></script>
 <script type="text/javascript" id="user-profile-js-extra">
 /* <![CDATA[ */
-var userProfileL10n = {"user_id":"0","nonce":"3c302004be"};
+var userProfileL10n = {"user_id":"0","nonce":"50149f75f8"};
 /* ]]> */
 </script>
 <script type="text/javascript" id="user-profile-js-translations">
