@@ -20,25 +20,6 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=6.0.3</generator>
 	<item>
-		<title>Blog 3</title>
-		<link>https://namphunphin.github.io/mywordpress/2022/10/15/blog-3/</link>
-					<comments>https://namphunphin.github.io/mywordpress/2022/10/15/blog-3/#respond</comments>
-		
-		<dc:creator><![CDATA[nguyenphuongnam]]></dc:creator>
-		<pubDate>Sat, 15 Oct 2022 06:25:10 +0000</pubDate>
-				<category><![CDATA[Chưa phân loại]]></category>
-		<guid isPermaLink="false">https://namphunphin.github.io/mywordpress/2022/10/15/blog-3/</guid>
-
-					<description><![CDATA[Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.]]></description>
-										<content:encoded><![CDATA[<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
-]]></content:encoded>
-					
-					<wfw:commentRss>https://namphunphin.github.io/mywordpress/2022/10/15/blog-3/feed/</wfw:commentRss>
-			<slash:comments>0</slash:comments>
-		
-		
-			</item>
-		<item>
 		<title>Blog 4</title>
 		<link>https://namphunphin.github.io/mywordpress/2022/10/15/blog-4/</link>
 					<comments>https://namphunphin.github.io/mywordpress/2022/10/15/blog-4/#respond</comments>
@@ -53,6 +34,25 @@
 ]]></content:encoded>
 					
 					<wfw:commentRss>https://namphunphin.github.io/mywordpress/2022/10/15/blog-4/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Blog 3</title>
+		<link>https://namphunphin.github.io/mywordpress/2022/10/15/blog-3/</link>
+					<comments>https://namphunphin.github.io/mywordpress/2022/10/15/blog-3/#respond</comments>
+		
+		<dc:creator><![CDATA[nguyenphuongnam]]></dc:creator>
+		<pubDate>Sat, 15 Oct 2022 06:25:10 +0000</pubDate>
+				<category><![CDATA[Chưa phân loại]]></category>
+		<guid isPermaLink="false">https://namphunphin.github.io/mywordpress/2022/10/15/blog-3/</guid>
+
+					<description><![CDATA[Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.]]></description>
+										<content:encoded><![CDATA[<p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://namphunphin.github.io/mywordpress/2022/10/15/blog-3/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
 		
 		
@@ -105,7 +105,7 @@
 				<category><![CDATA[Chưa phân loại]]></category>
 		<guid isPermaLink="false">https://namphunphin.github.io/mywordpress/?p=6</guid>
 
-					<description><![CDATA[Tại sự kiện Galaxy Unpacked diễn ra lúc 22:00 9/2/2022, Samsung đã chính thức giới thiệu chiếc điện thoại mới Samsung Galaxy S22 Ultra với nhiều thay đổi ngôn thiết [&#8230;]]]></description>
+					<description><![CDATA[Tại sự kiện Galaxy Unpacked diễn ra lúc 22:00 9/2/2022, Samsung đã chính thức giới thiệu chiếc điện thoại mới Samsung Galaxy S22 Ultra với nhiều thay đổi ngôn thiết kế và công bố thông số cấu hình &#8220;khủng&#8221; với hiệu năng mạnh mẽ nhất thế giới smartphone ở thời điểm hiện tại. Với thiết [&#8230;]]]></description>
 										<content:encoded><![CDATA[
 <div class="wp-block-media-text alignwide has-media-on-the-right is-stacked-on-mobile is-vertically-aligned-top" style="grid-template-columns:auto 45%"><figure class="wp-block-media-text__media"><img loading="lazy" width="2045" height="2500" src="https://namphunphin.github.io/mywordpress/wp-content/uploads/2022/08/screen-4.webp" alt="" class="wp-image-11 size-full"/></figure><div class="wp-block-media-text__content">
 <p>Tại sự kiện Galaxy Unpacked diễn ra lúc <strong>22:00 9/2/2022</strong>, Samsung đã chính thức giới thiệu chiếc điện thoại mới Samsung Galaxy S22 Ultra với nhiều thay đổi ngôn thiết kế và công bố thông số cấu hình &#8220;khủng&#8221; với hiệu năng mạnh mẽ nhất thế giới smartphone ở thời điểm hiện tại.</p>

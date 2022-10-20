@@ -5,11 +5,6 @@
 	<title>Đăng nhập &lsaquo; Nam Phun Phin &#8212; WordPress</title>
 	<meta name="robots" content="max-image-preview:large, noindex, noarchive">
 <link rel="dns-prefetch" href="//s.w.org">
-<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
-<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
-<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-content/plugins/ibtana-ecommerce-product-addons/dist/js/slick.min.js?ver=0.4.2.2" id="iepa-slick-js-js"></script>
-<link rel="stylesheet" id="iepa-fancybox-css-css" href="https://namphunphin.github.io/mywordpress/wp-content/plugins/ibtana-ecommerce-product-addons/dist/css/fancybox.css?ver=0.4.2.2" type="text/css" media="all">
-<link rel="stylesheet" id="iepa-front-css-css" href="https://namphunphin.github.io/mywordpress/wp-content/plugins/ibtana-ecommerce-product-addons/dist/css/gallery-slider.css?ver=0.4.2.2" type="text/css" media="all">
 <link rel="stylesheet" id="dashicons-css" href="https://namphunphin.github.io/mywordpress/wp-includes/css/dashicons.min.css?ver=6.0.3" type="text/css" media="all">
 <link rel="stylesheet" id="buttons-css" href="https://namphunphin.github.io/mywordpress/wp-includes/css/buttons.min.css?ver=6.0.3" type="text/css" media="all">
 <link rel="stylesheet" id="forms-css" href="https://namphunphin.github.io/mywordpress/wp-admin/css/forms.min.css?ver=6.0.3" type="text/css" media="all">
@@ -75,9 +70,8 @@ if ( typeof wpOnload === 'function' ) { wpOnload() }		</script>
 
 					</form>
 				</div>
-				<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-content/plugins/ibtana-ecommerce-product-addons/dist/js/jquery.fancybox.js?ver=0.4.2.2" id="iepa-fancybox-js-js"></script>
-<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-content/plugins/ibtana-ecommerce-product-addons/dist/js/jquery.zoom.min.js?ver=0.4.2.2" id="iepa-zoom-js-js"></script>
-<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-content/plugins/ibtana-ecommerce-product-addons/dist/js/gallery-slider.js?ver=0.4.2.2" id="iepa-front-js-js"></script>
+				<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <script type="text/javascript" id="zxcvbn-async-js-extra">
 /* <![CDATA[ */
 var _zxcvbnSettings = {"src":"http:\/\/localhost\/myproject\/wordpress\/wp-includes\/js\/zxcvbn.min.js"};
@@ -104,9 +98,7 @@ var pwsL10n = {"unknown":"Mật khẩu mạnh không xác định","short":"Rấ
 } )( "default", {"translation-revision-date":"2022-08-03 11:30:24+0000","generator":"GlotPress\/4.0.0-alpha.1","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"vi_VN"},"%1$s is deprecated since version %2$s! Use %3$s instead. Please consider writing more inclusive code.":["%1$s đã ngừng hoạt động từ phiên bản %2$s! Sử dụng thay thế bằng %3$s."]}},"comment":{"reference":"wp-admin\/js\/password-strength-meter.js"}} );
 </script>
 <script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-admin/js/password-strength-meter.min.js?ver=6.0.3" id="password-strength-meter-js"></script>
-<script src="https://namphunphin.github.io/mywordpress/wp-content/plugins/the-events-calendar/common/src/resources/js/underscore-before.js"></script>
 <script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/underscore.min.js?ver=1.13.3" id="underscore-js"></script>
-<script src="https://namphunphin.github.io/mywordpress/wp-content/plugins/the-events-calendar/common/src/resources/js/underscore-after.js"></script>
 <script type="text/javascript" id="wp-util-js-extra">
 /* <![CDATA[ */
 var _wpUtilSettings = {"ajax":{"url":"\/myproject\/wordpress\/wp-admin\/admin-ajax.php"}};
