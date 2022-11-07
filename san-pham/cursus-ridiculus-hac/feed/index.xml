@@ -11,11 +11,11 @@
 	<atom:link href="https://namphunphin.github.io/mywordpress/san-pham/cursus-ridiculus-hac/feed/" rel="self" type="application/rss+xml" />
 	<link>https://namphunphin.github.io/mywordpress/san-pham/cursus-ridiculus-hac/</link>
 	<description>Một trang web mới sử dụng WordPress</description>
-	<lastBuildDate>Sat, 15 Oct 2022 06:54:08 +0000</lastBuildDate>
+	<lastBuildDate>Mon, 07 Nov 2022 14:21:14 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.0.3</generator>
+	<generator>https://wordpress.org/?v=6.1</generator>
 </channel>
 </rss>
