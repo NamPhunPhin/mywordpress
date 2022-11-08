@@ -157,17 +157,6 @@
 /* Start custom CSS for counter, class: .elementor-element-271d8a9 */.elementor-1402 .elementor-element.elementor-element-271d8a9 {
     border-right: 1px black ;
 }/* End custom CSS */
-/* Start custom CSS for video, class: .elementor-element-fd7abc8 */.elementor-1402 .elementor-element.elementor-element-fd7abc8 .elementor-custom-embed-image-overlay {
-    transition: 0.75s ;
-}
-
-.elementor-1402 .elementor-element.elementor-element-fd7abc8 .elementor-custom-embed-image-overlay:hover i{
-    scale: 0.7;
-}
-
-.elementor-1402 .elementor-element.elementor-element-fd7abc8 .elementor-custom-embed-image-overlay:hover{
-    scale: 1.2;
-}/* End custom CSS */
 /* Start custom CSS for heading, class: .elementor-element-3d6d71a */@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans:400,500,700|Google+Sans+Text:400&lang=vi');
 
 .elementor-1402 .elementor-element.elementor-element-3d6d71a .elementor-heading-title{
