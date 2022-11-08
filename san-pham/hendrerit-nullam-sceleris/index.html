@@ -99,7 +99,7 @@ img.emoji {
 <link rel="stylesheet" id="font-awesome-5-all-css" href="https://namphunphin.github.io/mywordpress/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.8.0" type="text/css" media="all">
 <link rel="stylesheet" id="font-awesome-4-shim-css" href="https://namphunphin.github.io/mywordpress/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.8.0" type="text/css" media="all">
 <link rel="stylesheet" id="elementor-global-css" href="https://namphunphin.github.io/mywordpress/wp-content/uploads/elementor/css/global.css?ver=1667610580" type="text/css" media="all">
-<link rel="stylesheet" id="elementor-post-1364-css" href="https://namphunphin.github.io/mywordpress/wp-content/uploads/elementor/css/post-1364.css?ver=1667875333" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-1364-css" href="https://namphunphin.github.io/mywordpress/wp-content/uploads/elementor/css/post-1364.css?ver=1667878135" type="text/css" media="all">
 <link rel="stylesheet" id="hfe-widgets-style-css" href="https://namphunphin.github.io/mywordpress/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=1.6.13" type="text/css" media="all">
 <link rel="stylesheet" id="elementor-post-1801-css" href="https://namphunphin.github.io/mywordpress/wp-content/uploads/elementor/css/post-1801.css?ver=1667840801" type="text/css" media="all">
 <link rel="stylesheet" id="font-awesome-css" href="https://namphunphin.github.io/mywordpress/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0" type="text/css" media="all">
@@ -264,304 +264,138 @@ img.emoji {
 
 								<div class="elementor-widget-container">
 							<div data-elementor-type="wp-post" data-elementor-id="1853" class="elementor elementor-1853">
-									<section class="elementor-section elementor-top-section elementor-element elementor-element-2c2b6ca elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2c2b6ca" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-1eef3ab elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="1eef3ab" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-8d7639e" data-id="8d7639e" data-element_type="column">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-72f9e1c" data-id="72f9e1c" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-a5060b8 elementor-widget elementor-widget-metform" data-id="a5060b8" data-element_type="widget" data-widget_type="metform.default">
+								<div class="elementor-element elementor-element-6ce4600 elementor-widget elementor-widget-heading" data-id="6ce4600" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<div id="mf-response-props-id-2221" data-previous-steps-style="" data-editswitchopen="" data-response_type="alert" data-erroricon="fas fa-exclamation-triangle" data-successicon="fas fa-check" data-messageposition="top" class="   mf-scroll-top-no">
-		<div class="formpicker_warper formpicker_warper_editable" data-metform-formpicker-key="2221">
-				
-			<div class="elementor-widget-container">
-				
-		<div id="metform-wrap-a5060b8-2221" class="mf-form-wrapper" data-form-id="2221" data-action="http://localhost/myproject/wordpress/wp-json/metform/v1/entries/insert/2221" data-wp-nonce="969a1bc433" data-form-nonce="1c2ea9d7c0" data-quiz-summery="false" data-save-progress="false" data-form-type="general-form" data-stop-vertical-effect=""></div>
-
-
-		<!----------------------------- 
-			* controls_data : find the the props passed indie of data attribute
-			* props.SubmitResponseMarkup : contains the markup of error or success message
-			* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
-		--------------------------- -->
-
-				<script type="text/mf" class="mf-template">
-			function controls_data (value){
-				let currentWrapper = "mf-response-props-id-2221";
-				let currentEl = document.getElementById(currentWrapper);
-				
-				return currentEl ? currentEl.dataset[value] : false
-			}
-
-
-			let is_edit_mode = '' ? true : false;
-			let message_position = controls_data('messageposition') || 'top';
-
-			
-			let message_successIcon = controls_data('successicon') || '';
-			let message_errorIcon = controls_data('erroricon') || '';
-			let message_editSwitch = controls_data('editswitchopen') === 'yes' ? true : false;
-			let message_proClass = controls_data('editswitchopen') === 'yes' ? 'mf_pro_activated' : '';
-			
-			let is_dummy_markup = is_edit_mode && message_editSwitch ? true : false;
-
-			
-			return html`
-				<form
-					className="metform-form-content"
-					ref=${parent.formContainerRef}
-					onSubmit=${ validation.handleSubmit( parent.handleFormSubmit ) }
-				
-					>
-			
-			
-					${is_dummy_markup ? message_position === 'top' ?  props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''}
-					${is_dummy_markup ? ' ' :  message_position === 'top' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''}
-
-					<!--------------------------------------------------------
-					*** IMPORTANT / DANGEROUS ***
-					${html``} must be used as in immediate child of "metform-form-main-wrapper"
-					class otherwise multistep form will not run at all
-					---------------------------------------------------------->
-
-					<div className="metform-form-main-wrapper" key=${'hide-form-after-submit'} ref=${parent.formRef}>
-					${html`
-								<div data-elementor-type="wp-post" key="2" data-elementor-id="2221" className="elementor elementor-2221">
-									<section className="elementor-section elementor-top-section elementor-element elementor-element-2928b1ec elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="2928b1ec" data-element_type="section">
-						<div className="elementor-container elementor-column-gap-default">
-					<div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-54f52d08" data-id="54f52d08" data-element_type="column">
-			<div className="elementor-widget-wrap elementor-element-populated">
-								<div className="elementor-element elementor-element-75f44bbc elementor-widget elementor-widget-heading" data-id="75f44bbc" data-element_type="widget" data-widget_type="heading.default">
-				<div className="elementor-widget-container">
-			<style key="1">/*! elementor - v3.8.0 - 30-10-2022 */
-.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}<\/style><h3 className="elementor-heading-title elementor-size-default">SIGN IN<\/h3>		<\/div>
-				<\/div>
-				<div className="elementor-element elementor-element-dcfa4c7 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="dcfa4c7" data-element_type="widget" data-widget_type="divider.default">
-				<div className="elementor-widget-container">
-			<style key="1">/*! elementor - v3.8.0 - 30-10-2022 */
-.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#2c2c2c;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:-webkit-box;display:-ms-flexbox;display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);-ms-flex-negative:0;flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:-webkit-box;display:-ms-flexbox;display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-bottom:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:100;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:100;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}.e-con-inner>.elementor-widget-divider,.e-con>.elementor-widget-divider{width:var(--container-widget-width,100%)}<\/style>		<div className="elementor-divider">
-			<span className="elementor-divider-separator">
-						<\/span>
-		<\/div>
-				<\/div>
-				<\/div>
-				<section className="elementor-section elementor-inner-section elementor-element elementor-element-6c0f816e elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="6c0f816e" data-element_type="section">
-						<div className="elementor-container elementor-column-gap-default">
-					<div className="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-e7ff207" data-id="e7ff207" data-element_type="column">
-			<div className="elementor-widget-wrap elementor-element-populated">
-								<div className="elementor-element elementor-element-e9688d1 elementor-widget elementor-widget-mf-text" data-id="e9688d1" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-text&quot;}" data-widget_type="mf-text.default">
-				<div className="elementor-widget-container">
-			
-		<div className="mf-input-wrapper">
-							<label className="mf-input-label" htmlFor="mf-input-text-e9688d1">
-					${ parent.decodeEntities(`Username or email address`) } 					<span className="mf-input-required-indicator"><\/span>
-				<\/label>
-			
-			<input
-				type="text"
-				className="mf-input "
-				id="mf-input-text-e9688d1"
-				name="mf-text"
-				placeholder="${ parent.decodeEntities(`Username or email address`) } "
-									onInput=${parent.handleChange}
-					aria-invalid=${validation.errors['mf-text'] ? 'true' : 'false'}
-					ref=${el =>{
-												parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":false,"expression":"null"}, el)
-					}}
-								/>
-
-							<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-text"
-					as=${html`<span className="mf-error-message"><\/span>`}
-					/>
-			
-					<\/div>
-
-				<\/div>
-				<\/div>
-					<\/div>
-		<\/div>
-							<\/div>
-		<\/section>
-				<section className="elementor-section elementor-inner-section elementor-element elementor-element-279afaa3 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="279afaa3" data-element_type="section">
-						<div className="elementor-container elementor-column-gap-default">
-					<div className="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-40d29e36" data-id="40d29e36" data-element_type="column">
-			<div className="elementor-widget-wrap elementor-element-populated">
-								<div className="elementor-element elementor-element-c8abf96 elementor-widget elementor-widget-mf-password" data-id="c8abf96" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-password&quot;}" data-widget_type="mf-password.default">
-				<div className="elementor-widget-container">
-			
-		<div className="mf-input-wrapper">
-							<label className="mf-input-label" htmlFor="mf-input-password-c8abf96">
-					${ parent.decodeEntities(`Password`) } 					<span className="mf-input-required-indicator"><\/span>
-				<\/label>
-			
-			<input type="password" className="mf-input " id="mf-input-password-c8abf96" 
-				name="mf-password" 
-				placeholder="${ parent.decodeEntities(`Your Password`) } " 
-				onInput=${ parent.handleChange }
-
-									aria-invalid=${validation.errors['mf-password'] ? 'true' : 'false'}
-					ref=${ el => parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":false,"expression":"null"}, el) }
-							/>
-
-							<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-password"
-					as=${html`<span className="mf-error-message"><\/span>`}
-					/>
-						
-					<\/div>
-
-				<\/div>
-				<\/div>
-					<\/div>
-		<\/div>
-							<\/div>
-		<\/section>
-				<section className="elementor-section elementor-inner-section elementor-element elementor-element-592ebcd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="592ebcd" data-element_type="section">
-						<div className="elementor-container elementor-column-gap-default">
-					<div className="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-6fea94a" data-id="6fea94a" data-element_type="column">
-			<div className="elementor-widget-wrap elementor-element-populated">
-								<div className="elementor-element elementor-element-c6290e6 elementor-widget elementor-widget-mf-checkbox" data-id="c6290e6" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-checkbox&quot;,&quot;mf_input_list&quot;:[{&quot;mf_input_option_text&quot;:&quot;Remember me&quot;,&quot;mf_input_option_value&quot;:&quot;value-1&quot;,&quot;_id&quot;:&quot;27c40bd&quot;,&quot;mf_input_option_status&quot;:&quot;&quot;,&quot;mf_input_option_selected&quot;:&quot;&quot;}]}" data-widget_type="mf-checkbox.default">
-				<div className="elementor-widget-container">
-			
-		<div className="mf-input-wrapper">
-			
-			<div 
-									ref=${el => parent.handleCheckbox(el, 'onLoad')}
-								className="mf-checkbox multi-option-input-type"
-				id="mf-input-checkbox-c6290e6">
-									<div className="mf-checkbox-option ">
-						<label>
-														<input type="checkbox"
-								className="mf-input mf-checkbox-input "
-								name="mf-checkbox"
-								value="value-1"
-								defaultChecked=""
-								
-																									onInput=${ el =>  parent.handleCheckbox(el.target, 'onClick') }
-									aria-invalid=${validation.errors['mf-checkbox'] ? 'true' : 'false'}
-									ref=${el => {
-																				parent.activateValidation({"message":"This field is required.","minLength":1,"maxLength":"","type":"none","required":false,"expression":"null"}, el)}
-									}
-																/>
-							<span>
-								${ parent.decodeEntities(`Remember me`) } 							<\/span>
-						<\/label>
-					<\/div>
-								<\/div>
-
-							<${validation.ErrorMessage}
-					errors=${validation.errors}
-					name="mf-checkbox"
-					as=${html`<span className="mf-error-message"><\/span>`}
-					/>
-						
-					<\/div>
-
-				<\/div>
-				<\/div>
-					<\/div>
-		<\/div>
-							<\/div>
-		<\/section>
-				<div className="elementor-element elementor-element-f7d0ea4 elementor-widget__width-inherit mf-btn--center elementor-widget elementor-widget-mf-button" data-id="f7d0ea4" data-element_type="widget" data-widget_type="mf-button.default">
-				<div className="elementor-widget-container">
-					<div className="mf-btn-wraper " data-mf-form-conditional-logic-requirement="">
-							<button type="submit" className="metform-btn metform-submit-btn " id="">
-					<span>${ parent.decodeEntities(`LOG IN`) } <\/span>
-				<\/button>
-			        <\/div>
-        		<\/div>
-				<\/div>
-					<\/div>
-		<\/div>
-							<\/div>
-		<\/section>
-				<section className="elementor-section elementor-top-section elementor-element elementor-element-61c5ec5 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="61c5ec5" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
-						<div className="elementor-container elementor-column-gap-default">
-					<div className="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-0ae17a6" data-id="0ae17a6" data-element_type="column">
-			<div className="elementor-widget-wrap elementor-element-populated">
-								<div className="elementor-element elementor-element-b0cd7db elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="b0cd7db" data-element_type="widget" data-widget_type="divider.default">
-				<div className="elementor-widget-container">
-					<div className="elementor-divider">
-			<span className="elementor-divider-separator">
-						<\/span>
-		<\/div>
-				<\/div>
-				<\/div>
-					<\/div>
-		<\/div>
-				<div className="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-35aaad1" data-id="35aaad1" data-element_type="column">
-			<div className="elementor-widget-wrap elementor-element-populated">
-								<div className="elementor-element elementor-element-6598abc elementor-widget elementor-widget-heading" data-id="6598abc" data-element_type="widget" data-widget_type="heading.default">
-				<div className="elementor-widget-container">
-			<h3 className="elementor-heading-title elementor-size-default">OR LOGIN<\/h3>		<\/div>
-				<\/div>
-					<\/div>
-		<\/div>
-				<div className="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-41ddc22" data-id="41ddc22" data-element_type="column">
-			<div className="elementor-widget-wrap elementor-element-populated">
-								<div className="elementor-element elementor-element-6604228 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="6604228" data-element_type="widget" data-widget_type="divider.default">
-				<div className="elementor-widget-container">
-					<div className="elementor-divider">
-			<span className="elementor-divider-separator">
-						<\/span>
-		<\/div>
-				<\/div>
-				<\/div>
-					<\/div>
-		<\/div>
-							<\/div>
-		<\/section>
-				<section className="elementor-section elementor-top-section elementor-element elementor-element-66df5c6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="66df5c6" data-element_type="section">
-						<div className="elementor-container elementor-column-gap-default">
-					<div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-503f360" data-id="503f360" data-element_type="column">
-			<div className="elementor-widget-wrap elementor-element-populated">
-								<div className="elementor-element elementor-element-a435812 elementor-align-center elementor-widget elementor-widget-button" data-id="a435812" data-element_type="widget" data-widget_type="button.default">
-				<div className="elementor-widget-container">
-					<div className="elementor-button-wrapper">
-			<a href="#" className="elementor-button-link elementor-button elementor-size-md" role="button">
-						<span className="elementor-button-content-wrapper">
-							<span className="elementor-button-icon elementor-align-icon-left">
-				<i aria-hidden="true" className="fab fa-facebook-square"><\/i>			<\/span>
-						<span className="elementor-button-text">FACEBOOK<\/span>
-		<\/span>
-					<\/a>
-		<\/div>
-				<\/div>
-				<\/div>
-				<div className="elementor-element elementor-element-68515b3 elementor-align-center elementor-widget elementor-widget-button" data-id="68515b3" data-element_type="widget" data-widget_type="button.default">
-				<div className="elementor-widget-container">
-					<div className="elementor-button-wrapper">
-			<a href="#" className="elementor-button-link elementor-button elementor-size-md" role="button">
-						<span className="elementor-button-content-wrapper">
-							<span className="elementor-button-icon elementor-align-icon-left">
-				<svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 48 48" className="abcRioButtonSvg"><g><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"><\/path><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"><\/path><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"><\/path><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"><\/path><path fill="none" d="M0 0h48v48H0z"><\/path><\/g><\/svg>			<\/span>
-						<span className="elementor-button-text">GOOGLE<\/span>
-		<\/span>
-					<\/a>
-		<\/div>
-				<\/div>
-				<\/div>
-					<\/div>
-		<\/div>
-							<\/div>
-		<\/section>
-							<\/div>
-							`}
-					<\/div>
-
-					${is_dummy_markup ? message_position === 'bottom' ? props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''}
-					${is_dummy_markup ? ' ' : message_position === 'bottom' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''}
-				
-				<\/form>
-			`
-		</script>
-
+			<style>/*! elementor - v3.8.0 - 30-10-2022 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style>
+<h3 class="elementor-heading-title elementor-size-default">SIGN IN</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-55084c9 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="55084c9" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.8.0 - 30-10-2022 */
+.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#2c2c2c;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:-webkit-box;display:-ms-flexbox;display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);-ms-flex-negative:0;flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:-webkit-box;display:-ms-flexbox;display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-bottom:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:100;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0;-ms-flex-negative:100;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}.e-con-inner>.elementor-widget-divider,.e-con>.elementor-widget-divider{width:var(--container-widget-width,100%)}</style>		<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
 					</div>
 		</div>
-		</div>		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-c42cf0b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c42cf0b" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6aa9375" data-id="6aa9375" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-a9c6b9d elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="a9c6b9d" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor-pro - v3.7.1 - 16-05-2022 */
+.elementor-button.elementor-hidden,.elementor-hidden{display:none}.e-form__step{width:100%}.e-form__step:not(.elementor-hidden){display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}.e-form__buttons{-ms-flex-wrap:wrap;flex-wrap:wrap}.e-form__buttons,.e-form__buttons__wrapper{display:-webkit-box;display:-ms-flexbox;display:flex}.e-form__indicators{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:nowrap;flex-wrap:nowrap;font-size:13px;margin-bottom:var(--e-form-steps-indicators-spacing)}.e-form__indicators,.e-form__indicators__indicator{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.e-form__indicators__indicator{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-ms-flex-preferred-size:0;flex-basis:0;padding:0 var(--e-form-steps-divider-gap)}.e-form__indicators__indicator__progress{width:100%;position:relative;background-color:var(--e-form-steps-indicator-progress-background-color);border-radius:var(--e-form-steps-indicator-progress-border-radius);overflow:hidden}.e-form__indicators__indicator__progress__meter{width:var(--e-form-steps-indicator-progress-meter-width,0);height:var(--e-form-steps-indicator-progress-height);line-height:var(--e-form-steps-indicator-progress-height);padding-right:15px;border-radius:var(--e-form-steps-indicator-progress-border-radius);background-color:var(--e-form-steps-indicator-progress-color);color:var(--e-form-steps-indicator-progress-meter-color);text-align:right;-webkit-transition:width .1s linear;-o-transition:width .1s linear;transition:width .1s linear}.e-form__indicators__indicator:first-child{padding-left:0}.e-form__indicators__indicator:last-child{padding-right:0}.e-form__indicators__indicator--state-inactive{color:var(--e-form-steps-indicator-inactive-primary-color,#c2cbd2)}.e-form__indicators__indicator--state-inactive [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-inactive-secondary-color,#fff)}.e-form__indicators__indicator--state-inactive object,.e-form__indicators__indicator--state-inactive svg{fill:var(--e-form-steps-indicator-inactive-primary-color,#c2cbd2)}.e-form__indicators__indicator--state-active{color:var(--e-form-steps-indicator-active-primary-color,#39b54a);border-color:var(--e-form-steps-indicator-active-secondary-color,#fff)}.e-form__indicators__indicator--state-active [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-active-secondary-color,#fff)}.e-form__indicators__indicator--state-active object,.e-form__indicators__indicator--state-active svg{fill:var(--e-form-steps-indicator-active-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed{color:var(--e-form-steps-indicator-completed-secondary-color,#fff)}.e-form__indicators__indicator--state-completed [class*=indicator--shape-]:not(.e-form__indicators__indicator--shape-none){background-color:var(--e-form-steps-indicator-completed-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed .e-form__indicators__indicator__label{color:var(--e-form-steps-indicator-completed-primary-color,#39b54a)}.e-form__indicators__indicator--state-completed .e-form__indicators__indicator--shape-none{color:var(--e-form-steps-indicator-completed-primary-color,#39b54a);background-color:initial}.e-form__indicators__indicator--state-completed object,.e-form__indicators__indicator--state-completed svg{fill:var(--e-form-steps-indicator-completed-secondary-color,#fff)}.e-form__indicators__indicator__icon{width:var(--e-form-steps-indicator-padding,30px);height:var(--e-form-steps-indicator-padding,30px);font-size:var(--e-form-steps-indicator-icon-size);border-width:1px;border-style:solid;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;overflow:hidden;margin-bottom:10px}.e-form__indicators__indicator__icon img,.e-form__indicators__indicator__icon object,.e-form__indicators__indicator__icon svg{width:var(--e-form-steps-indicator-icon-size);height:auto}.e-form__indicators__indicator__icon .e-font-icon-svg{height:1em}.e-form__indicators__indicator__number{width:var(--e-form-steps-indicator-padding,30px);height:var(--e-form-steps-indicator-padding,30px);border-width:1px;border-style:solid;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:10px}.e-form__indicators__indicator--shape-circle{border-radius:50%}.e-form__indicators__indicator--shape-square{border-radius:0}.e-form__indicators__indicator--shape-rounded{border-radius:5px}.e-form__indicators__indicator--shape-none{border:0}.e-form__indicators__indicator__label{text-align:center}.e-form__indicators__indicator__separator{width:100%;height:var(--e-form-steps-divider-width);background-color:#c2cbd2}.e-form__indicators--type-icon,.e-form__indicators--type-icon_text,.e-form__indicators--type-number,.e-form__indicators--type-number_text{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.e-form__indicators--type-icon .e-form__indicators__indicator__separator,.e-form__indicators--type-icon_text .e-form__indicators__indicator__separator,.e-form__indicators--type-number .e-form__indicators__indicator__separator,.e-form__indicators--type-number_text .e-form__indicators__indicator__separator{margin-top:calc(var(--e-form-steps-indicator-padding, 30px) / 2 - var(--e-form-steps-divider-width, 1px) / 2)}.elementor-field-type-hidden{display:none}.elementor-field-type-html{display:inline-block}.elementor-login .elementor-lost-password,.elementor-login .elementor-remember-me{font-size:.85em}.elementor-field-type-recaptcha_v3 .elementor-field-label{display:none}.elementor-field-type-recaptcha_v3 .grecaptcha-badge{z-index:1}.elementor-button .elementor-form-spinner{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}.elementor-form .elementor-button>span{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.elementor-form .elementor-button .elementor-button-text{white-space:normal;-webkit-box-flex:0;-ms-flex-positive:0;flex-grow:0}.elementor-form .elementor-button svg{height:auto}.elementor-form .elementor-button .e-font-icon-svg{height:1em}</style>		<form class="elementor-form" method="post" name="New Form">
+			<input type="hidden" name="post_id" value="1853">
+			<input type="hidden" name="form_id" value="a9c6b9d">
+			<input type="hidden" name="referer_title" value="Hendrerit nullam sceleris - Nam Phun Phin">
+
+							<input type="hidden" name="queried_id" value="1659">
+			
+			<div class="elementor-form-fields-wrapper elementor-labels-above">
+								<div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100">
+												<label for="form-field-name" class="elementor-field-label">
+								Username or email address							</label>
+														<input size="1" type="text" name="form_fields[name]" id="form-field-name" class="elementor-field elementor-size-sm  elementor-field-textual">
+											</div>
+								<div class="elementor-field-type-password elementor-field-group elementor-column elementor-field-group-email elementor-col-100 elementor-field-required">
+												<label for="form-field-email" class="elementor-field-label">
+								Password							</label>
+														<input size="1" type="password" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-sm  elementor-field-textual" required="required" aria-required="true">
+											</div>
+								<div class="elementor-field-type-checkbox elementor-field-group elementor-column elementor-field-group-field_e036e0d elementor-col-100">
+					<div class="elementor-field-subgroup  "><span class="elementor-field-option"><input type="checkbox" value="Remember Me" id="form-field-field_e036e0d-0" name="form_fields[field_e036e0d]"> <label for="form-field-field_e036e0d-0">Remember Me</label></span></div>				</div>
+								<div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+					<button type="submit" class="elementor-button elementor-size-sm">
+						<span>
+															<span class=" elementor-button-icon">
+																										</span>
+																						<span class="elementor-button-text">LOG IN</span>
+													</span>
+					</button>
+				</div>
+			</div>
+		</form>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-edea5cf elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default" data-id="edea5cf" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-0d19e27" data-id="0d19e27" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-d23a546 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="d23a546" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-fdc50e4" data-id="fdc50e4" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-9d7d596 elementor-widget elementor-widget-heading" data-id="9d7d596" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default">OR LOGIN</h3>		</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-975f19e" data-id="975f19e" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-94cba33 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="94cba33" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+					</div>
+		</div>
+							</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-ffdbbee elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ffdbbee" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1022ade" data-id="1022ade" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-d63cf67 elementor-align-center elementor-widget elementor-widget-button" data-id="d63cf67" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="#" class="elementor-button-link elementor-button elementor-size-md" role="button">
+						<span class="elementor-button-content-wrapper">
+							<span class="elementor-button-icon elementor-align-icon-left">
+				<i aria-hidden="true" class="fab fa-facebook-square"></i>			</span>
+						<span class="elementor-button-text">FACEBOOK</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-1806a5b elementor-align-center elementor-widget elementor-widget-button" data-id="1806a5b" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="#" class="elementor-button-link elementor-button elementor-size-md" role="button">
+						<span class="elementor-button-content-wrapper">
+							<span class="elementor-button-icon elementor-align-icon-left">
+				<svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewbox="0 0 48 48" class="abcRioButtonSvg"><g><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"></path><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"></path><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"></path><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"></path><path fill="none" d="M0 0h48v48H0z"></path></g></svg>			</span>
+						<span class="elementor-button-text">GOOGLE</span>
+		</span>
+					</a>
+		</div>
+				</div>
 				</div>
 					</div>
 		</div>
@@ -671,8 +505,8 @@ img.emoji {
 	<form class="cart" action="http://localhost/myproject/wordpress/san-pham/hendrerit-nullam-sceleris/" method="post" enctype="multipart/form-data">
 		
 			<div class="quantity">
-				<label class="screen-reader-text" for="quantity_6369c3404f8f3">Hendrerit nullam sceleris số lượng</label>
-		<input type="number" id="quantity_6369c3404f8f3" class="input-text qty text" step="1" min="1" max="300" name="quantity" value="1" title="SL" size="4" placeholder="" inputmode="numeric" autocomplete="off">
+				<label class="screen-reader-text" for="quantity_6369cdcad69d8">Hendrerit nullam sceleris số lượng</label>
+		<input type="number" id="quantity_6369cdcad69d8" class="input-text qty text" step="1" min="1" max="300" name="quantity" value="1" title="SL" size="4" placeholder="" inputmode="numeric" autocomplete="off">
 			</div>
 	
 		<button type="submit" name="add-to-cart" value="1659" class="single_add_to_cart_button button alt wp-element-button">Thêm vào giỏ hàng</button>
@@ -761,7 +595,7 @@ Main: 76% Polyester, 24% Elastane.</p>
 <input type="hidden" name="comment_parent" id="comment_parent" value="0">
 </p>
 <p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="4ca7a21775"></p>
-<p style="display: none !important;"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="191"><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p>
+<p style="display: none !important;"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="220"><script>document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p>
 </form>	</div>
 <!-- #respond -->
 				</div>
@@ -812,44 +646,46 @@ Main: 76% Polyester, 24% Elastane.</p>
 		<ul class="products columns-4">
 
 			
-					<li class="zakra-single-article product type-product post-1560 status-publish first instock product_cat-books has-post-thumbnail taxable shipping-taxable purchasable product-type-simple add-to-wishlist-after_add_to_cart">
-	<a href="https://namphunphin.github.io/mywordpress/san-pham/the-beatles-getback/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="214" height="300" src="https://namphunphin.github.io/mywordpress/wp-content/uploads/2022/10/sp_13.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy"><h2 class="woocommerce-loop-product__title">The Beatles: GetBack</h2>
+					<li class="zakra-single-article product type-product post-1540 status-publish first instock product_cat-biography product_cat-books product_cat-fantasy product_cat-history has-post-thumbnail taxable shipping-taxable purchasable product-type-simple add-to-wishlist-after_add_to_cart">
+	<a href="https://namphunphin.github.io/mywordpress/san-pham/senec-metus-convallis/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="263" height="300" src="https://namphunphin.github.io/mywordpress/wp-content/uploads/2022/10/sp_4.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy"><h2 class="woocommerce-loop-product__title">Senec metus convallis</h2>
 <div class="eael-star-rating star-rating"><span style="width:0%">Được xếp hạng <strong class="rating">0</strong> 5 sao</span></div>
-	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>802.000,00&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
-</a><a href="https://namphunphin.github.io/mywordpress/san-pham/hendrerit-nullam-sceleris/?add-to-cart=1560" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1560" data-product_sku="SK_013" aria-label="Thêm &ldquo;The Beatles: GetBack&rdquo; vào giỏ hàng" rel="nofollow">Thêm vào giỏ hàng</a>
-<div class="yith-wcwl-add-to-wishlist add-to-wishlist-1560  wishlist-fragment on-first-load" data-fragment-ref="1560" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:1560,&quot;parent_product_id&quot;:1560,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>359.000,00&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
+</a><a href="https://namphunphin.github.io/mywordpress/san-pham/hendrerit-nullam-sceleris/?add-to-cart=1540" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1540" data-product_sku="SK_004" aria-label="Thêm &ldquo;Senec metus convallis&rdquo; vào giỏ hàng" rel="nofollow">Thêm vào giỏ hàng</a>
+<div class="yith-wcwl-add-to-wishlist add-to-wishlist-1540  wishlist-fragment on-first-load" data-fragment-ref="1540" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:1540,&quot;parent_product_id&quot;:1540,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
 	</div>
 </li>
 
 			
-					<li class="zakra-single-article product type-product post-1564 status-publish instock product_cat-books has-post-thumbnail taxable shipping-taxable purchasable product-type-simple add-to-wishlist-after_add_to_cart">
-	<a href="https://namphunphin.github.io/mywordpress/san-pham/the-dirty-and-the-dead/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="214" height="300" src="https://namphunphin.github.io/mywordpress/wp-content/uploads/2022/10/sp_15.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy"><h2 class="woocommerce-loop-product__title">The Dirty and the Dead</h2>
-<div class="eael-star-rating star-rating"><span style="width:0%">Được xếp hạng <strong class="rating">0</strong> 5 sao</span></div>
-	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>997.000,00&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
-</a><a href="https://namphunphin.github.io/mywordpress/san-pham/hendrerit-nullam-sceleris/?add-to-cart=1564" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1564" data-product_sku="SK_015" aria-label="Thêm &ldquo;The Dirty and the Dead&rdquo; vào giỏ hàng" rel="nofollow">Thêm vào giỏ hàng</a>
-<div class="yith-wcwl-add-to-wishlist add-to-wishlist-1564  wishlist-fragment on-first-load" data-fragment-ref="1564" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:1564,&quot;parent_product_id&quot;:1564,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
-	</div>
-</li>
-
-			
-					<li class="zakra-single-article product type-product post-1574 status-publish instock product_cat-books has-post-thumbnail taxable shipping-taxable purchasable product-type-simple add-to-wishlist-after_add_to_cart">
-	<a href="https://namphunphin.github.io/mywordpress/san-pham/treachery-alpha-colony-book-8/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="214" height="300" src="https://namphunphin.github.io/mywordpress/wp-content/uploads/2022/10/sp_17.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy"><h2 class="woocommerce-loop-product__title">Treachery: Alpha Colony Book 8</h2>
-<div class="eael-star-rating star-rating"><span style="width:0%">Được xếp hạng <strong class="rating">0</strong> 5 sao</span></div>
-	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>814.000,00&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
-</a><a href="https://namphunphin.github.io/mywordpress/san-pham/hendrerit-nullam-sceleris/?add-to-cart=1574" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1574" data-product_sku="SK_017" aria-label="Thêm &ldquo;Treachery: Alpha Colony Book 8&rdquo; vào giỏ hàng" rel="nofollow">Thêm vào giỏ hàng</a>
-<div class="yith-wcwl-add-to-wishlist add-to-wishlist-1574  wishlist-fragment on-first-load" data-fragment-ref="1574" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:1574,&quot;parent_product_id&quot;:1574,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
-	</div>
-</li>
-
-			
-					<li class="zakra-single-article product type-product post-1633 status-publish last instock product_cat-books has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple add-to-wishlist-after_add_to_cart">
-	<a href="https://namphunphin.github.io/mywordpress/san-pham/amster-hamster-trip/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+					<li class="zakra-single-article product type-product post-1631 status-publish instock product_cat-books has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple add-to-wishlist-after_add_to_cart">
+	<a href="https://namphunphin.github.io/mywordpress/san-pham/wellness-and-paradise/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
 	<span class="onsale">Giảm giá!</span>
-	<img width="217" height="300" src="https://namphunphin.github.io/mywordpress/wp-content/uploads/2022/10/sp_25.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy"><h2 class="woocommerce-loop-product__title">Amster Hamster Trip</h2>
+	<img width="217" height="300" src="https://namphunphin.github.io/mywordpress/wp-content/uploads/2022/10/sp_24.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy"><h2 class="woocommerce-loop-product__title">Wellness And Paradise</h2>
 <div class="eael-star-rating star-rating"><span style="width:0%">Được xếp hạng <strong class="rating">0</strong> 5 sao</span></div>
-	<span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi>599.000,00&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi>399.000,00&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></ins></span>
-</a><a href="https://namphunphin.github.io/mywordpress/san-pham/hendrerit-nullam-sceleris/?add-to-cart=1633" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1633" data-product_sku="SK_025" aria-label="Thêm &ldquo;Amster Hamster Trip&rdquo; vào giỏ hàng" rel="nofollow">Thêm vào giỏ hàng</a>
-<div class="yith-wcwl-add-to-wishlist add-to-wishlist-1633  wishlist-fragment on-first-load" data-fragment-ref="1633" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:1633,&quot;parent_product_id&quot;:1633,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+	<span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi>699.000,00&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi>499.000,00&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></ins></span>
+</a><a href="https://namphunphin.github.io/mywordpress/san-pham/hendrerit-nullam-sceleris/?add-to-cart=1631" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1631" data-product_sku="SK_024" aria-label="Thêm &ldquo;Wellness And Paradise&rdquo; vào giỏ hàng" rel="nofollow">Thêm vào giỏ hàng</a>
+<div class="yith-wcwl-add-to-wishlist add-to-wishlist-1631  wishlist-fragment on-first-load" data-fragment-ref="1631" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:1631,&quot;parent_product_id&quot;:1631,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+	</div>
+</li>
+
+			
+					<li class="zakra-single-article product type-product post-1635 status-publish instock product_cat-books has-post-thumbnail sale taxable shipping-taxable purchasable product-type-simple add-to-wishlist-after_add_to_cart">
+	<a href="https://namphunphin.github.io/mywordpress/san-pham/summertime-love-stories/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+	<span class="onsale">Giảm giá!</span>
+	<img width="217" height="300" src="https://namphunphin.github.io/mywordpress/wp-content/uploads/2022/10/sp_26.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy"><h2 class="woocommerce-loop-product__title">Summertime Love Stories</h2>
+<div class="eael-star-rating star-rating"><span style="width:0%">Được xếp hạng <strong class="rating">0</strong> 5 sao</span></div>
+	<span class="price"><del aria-hidden="true"><span class="woocommerce-Price-amount amount"><bdi>399.000,00&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></del> <ins><span class="woocommerce-Price-amount amount"><bdi>199.000,00&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></ins></span>
+</a><a href="https://namphunphin.github.io/mywordpress/san-pham/hendrerit-nullam-sceleris/?add-to-cart=1635" data-quantity="1" class="button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="1635" data-product_sku="SK_026" aria-label="Thêm &ldquo;Summertime Love Stories&rdquo; vào giỏ hàng" rel="nofollow">Thêm vào giỏ hàng</a>
+<div class="yith-wcwl-add-to-wishlist add-to-wishlist-1635  wishlist-fragment on-first-load" data-fragment-ref="1635" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:1635,&quot;parent_product_id&quot;:1635,&quot;product_type&quot;:&quot;simple&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
+	</div>
+</li>
+
+			
+					<li class="zakra-single-article product type-product post-1621 status-publish last instock product_cat-books has-post-thumbnail taxable shipping-taxable purchasable product-type-variable add-to-wishlist-after_add_to_cart">
+	<a href="https://namphunphin.github.io/mywordpress/san-pham/beauty-unplugged/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="217" height="300" src="https://namphunphin.github.io/mywordpress/wp-content/uploads/2022/10/sp_21.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy"><h2 class="woocommerce-loop-product__title">Beauty Unplugged</h2>
+<div class="eael-star-rating star-rating"><span style="width:0%">Được xếp hạng <strong class="rating">0</strong> 5 sao</span></div>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi>99.000,00&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span> &ndash; <span class="woocommerce-Price-amount amount"><bdi>300.000,00&nbsp;<span class="woocommerce-Price-currencySymbol">&#8363;</span></bdi></span></span>
+</a><a href="https://namphunphin.github.io/mywordpress/san-pham/beauty-unplugged/" data-quantity="1" class="button wp-element-button product_type_variable add_to_cart_button" data-product_id="1621" data-product_sku="SK_021" aria-label="Lựa chọn cho &ldquo;Beauty Unplugged&rdquo;" rel="nofollow">Lựa chọn các tùy chọn</a>
+<div class="yith-wcwl-add-to-wishlist add-to-wishlist-1621  wishlist-fragment on-first-load" data-fragment-ref="1621" data-fragment-options="{&quot;base_url&quot;:&quot;&quot;,&quot;in_default_wishlist&quot;:false,&quot;is_single&quot;:false,&quot;show_exists&quot;:false,&quot;product_id&quot;:1621,&quot;parent_product_id&quot;:1621,&quot;product_type&quot;:&quot;variable&quot;,&quot;show_view&quot;:false,&quot;browse_wishlist_text&quot;:&quot;Browse wishlist&quot;,&quot;already_in_wishslist_text&quot;:&quot;The product is already in your wishlist!&quot;,&quot;product_added_text&quot;:&quot;Product added!&quot;,&quot;heading_icon&quot;:&quot;fa-heart-o&quot;,&quot;available_multi_wishlist&quot;:false,&quot;disable_wishlist&quot;:false,&quot;show_count&quot;:false,&quot;ajax_loading&quot;:false,&quot;loop_position&quot;:&quot;after_add_to_cart&quot;,&quot;item&quot;:&quot;add_to_wishlist&quot;}">
 	</div>
 </li>
 
@@ -1267,10 +1103,7 @@ Main: 76% Polyester, 24% Elastane.</p>
 <script type="text/template" id="tmpl-unavailable-variation-template">
 	<p>Rất tiếc, sản phẩm này hiện không tồn tại. Hãy chọn một phương thức kết hợp khác.<\/p>
 </script>
-<link rel="stylesheet" id="elementor-post-1853-css" href="https://namphunphin.github.io/mywordpress/wp-content/uploads/elementor/css/post-1853.css?ver=1667875173" type="text/css" media="all">
-<link rel="stylesheet" id="elementor-post-2221-css" href="https://namphunphin.github.io/mywordpress/wp-content/uploads/elementor/css/post-2221.css?ver=1667875146" type="text/css" media="all">
-<link rel="stylesheet" id="metform-ui-css" href="https://namphunphin.github.io/mywordpress/wp-content/plugins/metform/public/assets/css/metform-ui.css?ver=3.0.1" type="text/css" media="all">
-<link rel="stylesheet" id="metform-style-css" href="https://namphunphin.github.io/mywordpress/wp-content/plugins/metform/public/assets/css/style.css?ver=3.0.1" type="text/css" media="all">
+<link rel="stylesheet" id="elementor-post-1853-css" href="https://namphunphin.github.io/mywordpress/wp-content/uploads/elementor/css/post-1853.css?ver=1667878072" type="text/css" media="all">
 <link rel="stylesheet" id="google-fonts-2-css" href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;subset=vietnamese&#038;ver=6.1" type="text/css" media="all">
 <link rel="stylesheet" id="elementor-icons-fa-brands-css" href="https://namphunphin.github.io/mywordpress/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3" type="text/css" media="all">
 <script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-content/plugins/yith-woocommerce-wishlist/assets/js/jquery.selectBox.min.js?ver=1.2.0" id="jquery-selectBox-js"></script>
@@ -1346,19 +1179,6 @@ var localize = {"ajaxurl":"https:\/\/namphunphin.github.io\/mywordpress\/wp-admi
 </script>
 <script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=5.4.2" id="eael-general-js"></script>
 <script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.0.1" id="smartmenus-js"></script>
-<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-content/plugins/metform/public/assets/js/htm.js?ver=3.0.1" id="htm-js"></script>
-<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9" id="regenerator-runtime-js"></script>
-<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
-<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/dist/vendor/react.min.js?ver=17.0.1" id="react-js"></script>
-<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/dist/vendor/react-dom.min.js?ver=17.0.1" id="react-dom-js"></script>
-<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/dist/escape-html.min.js?ver=03e27a7b6ae14f7afaa6" id="wp-escape-html-js"></script>
-<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/dist/element.min.js?ver=47162ff4492c7ec4956b" id="wp-element-js"></script>
-<script type="text/javascript" id="metform-app-js-extra">
-/* <![CDATA[ */
-var mf = {"postType":"product","restURI":"https:\/\/namphunphin.github.io\/mywordpress\/wp-json\/metform\/v1\/forms\/views\/"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-content/plugins/metform/public/assets/js/app.js?ver=3.0.1" id="metform-app-js"></script>
 <script defer type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1661822343" id="akismet-frontend-js"></script>
 <script type="text/javascript" id="bdt-uikit-js-extra">
 /* <![CDATA[ */
@@ -1374,6 +1194,8 @@ var ElementPackConfig = {"ajaxurl":"https:\/\/namphunphin.github.io\/mywordpress
 <script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.8.0" id="elementor-frontend-js"></script>
 <script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-content/plugins/bdthemes-element-pack-lite/assets/js/common/helper.min.js?ver=4.5.1" id="element-pack-helper-js"></script>
 <script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.7.1" id="elementor-pro-webpack-runtime-js"></script>
+<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9" id="regenerator-runtime-js"></script>
+<script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
 <script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/dist/hooks.min.js?ver=4169d3cf8e8d95a3d6d5" id="wp-hooks-js"></script>
 <script type="text/javascript" src="https://namphunphin.github.io/mywordpress/wp-includes/js/dist/i18n.min.js?ver=9e794f35a71bb98672ae" id="wp-i18n-js"></script>
 <script type="text/javascript" id="wp-i18n-js-after">
